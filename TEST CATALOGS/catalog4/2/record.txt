@@ -1,0 +1,5 @@
+Imię: Mike
+Nazwisko: Kominsky
+Wiek: 21
+Kraj pochodzenia: USA
+Miejsce zamieszkania: Boston

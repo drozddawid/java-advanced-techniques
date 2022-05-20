@@ -1,0 +1,5 @@
+Imię: Mitchell 
+Nazwisko: Walters
+Wiek: 38
+Kraj pochodzenia: Kanada
+Miejsce zamieszkania: Rio de Janeiro

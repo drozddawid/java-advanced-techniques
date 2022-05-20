@@ -1,0 +1,5 @@
+Imię: Grant 
+Nazwisko: Evans
+Wiek: 19
+Kraj pochodzenia: USA
+Miejsce zamieszkania: Las Vegas

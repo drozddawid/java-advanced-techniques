@@ -1,0 +1,5 @@
+Imię: Hans
+Nazwisko: Gutenberg
+Wiek: 55
+Kraj pochodzenia: Niemcy
+Miejsce zamieszkania: Rotterdam

@@ -1,0 +1,5 @@
+Imię: Olive 
+Nazwisko: Yew
+Wiek: 15
+Kraj pochodzenia: Hiszpania
+Miejsce zamieszkania: Berlin

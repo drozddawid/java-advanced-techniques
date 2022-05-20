@@ -1,0 +1,5 @@
+Imię: Michael
+Nazwisko: Black
+Wiek: 35
+Kraj pochodzenia: Polska
+Miejsce zamieszkania: Lublin

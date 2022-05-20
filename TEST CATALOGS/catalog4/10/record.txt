@@ -1,0 +1,5 @@
+Imię: Justice 
+Nazwisko: Schneider
+Wiek: 29
+Kraj pochodzenia: Austria
+Miejsce zamieszkania: Zagreb

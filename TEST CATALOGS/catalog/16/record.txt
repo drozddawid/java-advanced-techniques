@@ -1,0 +1,5 @@
+Imię: Monserrat 
+Nazwisko: Perez
+Wiek: 33
+Kraj pochodzenia: Hiszpania
+Miejsce zamieszkania: Paryz

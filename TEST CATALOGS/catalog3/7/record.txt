@@ -1,0 +1,5 @@
+Imię: Jaidyn
+Nazwisko: Bentley
+Wiek: 43
+Kraj pochodzenia: Polska
+Miejsce zamieszkania: Wrocław

@@ -1,0 +1,5 @@
+Imię: Maureen
+Nazwisko: Legge
+Wiek: 34
+Kraj pochodzenia: Szwajcaria
+Miejsce zamieszkania: Rzym

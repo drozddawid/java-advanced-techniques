@@ -1,0 +1,5 @@
+Imię: Katarzyna
+Nazwisko: Polak
+Wiek: 44
+Kraj pochodzenia: Holandia
+Miejsce zamieszkania: Warszawa

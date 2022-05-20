@@ -1,0 +1,5 @@
+Imię: Phillip 
+Nazwisko: Conner
+Wiek: 25
+Kraj pochodzenia: USA
+Miejsce zamieszkania: Toronto
