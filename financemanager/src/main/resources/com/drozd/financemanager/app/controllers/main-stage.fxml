@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.drozd.financemanager.app.controllers.MainStageController">
+   <center>
+      <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab fx:id="eventsTab" onSelectionChanged="#onTabSelectionChanged" text="Events">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <ListView fx:id="eventsListView" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="addEventVBox" prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Add event:" />
+                              <TextField fx:id="eventTitleTextField" promptText="Title" />
+                              <TextField fx:id="eventPlaceTextField" promptText="Place" />
+                              <DatePicker fx:id="eventDatePicker" promptText="Date " />
+                              <HBox spacing="8.0">
+                                 <children>
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <Button mnemonicParsing="false" onAction="#onAddEventButtonClick" prefHeight="26.0" prefWidth="62.0" text="Add" />
+                                    <Button mnemonicParsing="false" onAction="#onCancelAddEventButtonClick" text="Cancel" />
+                                 </children>
+                              </HBox>
+                              <Label fx:id="addEventInfoLabel" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+          </Tab>
+            <Tab fx:id="peopleTab" onSelectionChanged="#onTabSelectionChanged" text="People">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <ListView fx:id="peopleListView" VBox.vgrow="ALWAYS" />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="addPersonVBox" prefHeight="200.0" prefWidth="100.0" spacing="5.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <Label text="Add person:" />
+                              <TextField fx:id="personNameTextField" promptText="First name" />
+                              <TextField fx:id="personSurameTextField" promptText="Last name" />
+                              <HBox spacing="8.0">
+                                 <children>
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <Button mnemonicParsing="false" onAction="#onAddPersonButtonClick" prefHeight="26.0" prefWidth="62.0" text="Add" />
+                                    <Button mnemonicParsing="false" onAction="#onCancelAddPersonButtonClick" text="Cancel" />
+                                 </children>
+                              </HBox>
+                              <Label fx:id="addPersonInfoLabel" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </Tab>
+            <Tab fx:id="paymentsTab" onSelectionChanged="#onTabSelectionChanged" text="Payments">
+               <content>
+                  <HBox>
+                     <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                           <children>
+                              <ListView fx:id="paymentsListView" onMouseClicked="#onPaymentClick" VBox.vgrow="ALWAYS" />
+                              <Label text="Double click on installment to set it paid or unpaid." />
+                           </children>
+                        </VBox>
+                        <VBox fx:id="rightSideVBox" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+                           <children>
+                              <VBox fx:id="delayedPaymentsVBox" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label fx:id="delayedPaymentsLabel" text="Delayed payments" textFill="#e43131" />
+                                    <ListView fx:id="delayedPaymentsListView" VBox.vgrow="ALWAYS" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="addPaymentVBox" prefHeight="200.0" prefWidth="100.0" spacing="3.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <Label text="Payment adding" />
+                                    <ComboBox fx:id="personComboBox" promptText="Person" VBox.vgrow="ALWAYS" />
+                                    <ComboBox fx:id="eventComboBox" promptText="Event" VBox.vgrow="ALWAYS" />
+                                    <TextField fx:id="eventCostTextField" promptText="Event cost" VBox.vgrow="ALWAYS" />
+                                    <TextField fx:id="numberOfInstalmentsTextField" promptText="Number of instalments" />
+                                    <TextField fx:id="instalmentPeriodTextField" promptText="Insalment period (days)" />
+                                    <HBox prefHeight="100.0" prefWidth="200.0" spacing="8.0" VBox.vgrow="NEVER">
+                                       <children>
+                                          <Region HBox.hgrow="ALWAYS" />
+                                          <Button mnemonicParsing="false" onAction="#onAddPaymentAcceptButtonClick" text="Accept" />
+                                          <Button mnemonicParsing="false" onAction="#onAddPaymentCancelButtonClick" text="Cancel" />
+                                       </children>
+                                    </HBox>
+                                    <Label fx:id="addPaymentInfoLabel" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <HBox spacing="8.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="addButton" mnemonicParsing="false" onAction="#onAddButtonClick" prefHeight="25.0" prefWidth="61.0" text="Add" />
+            <Button fx:id="removeButton" mnemonicParsing="false" onAction="#onRemoveButtonClick" text="Remove" />
+            <Region HBox.hgrow="ALWAYS" />
+            <DatePicker fx:id="datePicker" onAction="#onDateChange" promptText="Current date" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>
