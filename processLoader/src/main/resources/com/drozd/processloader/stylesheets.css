@@ -1,0 +1,15 @@
+.button {
+    -fx-background-color: #252525;
+    -fx-text-fill: white;
+}
+.root {
+    -fx-background-color: #505050;
+}
+
+.list-view {
+    -fx-selection-bar: green;
+    -fx-background-color: #252525;
+}
+.label {
+    -fx-text-fill: white;
+}
