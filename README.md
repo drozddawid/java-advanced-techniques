@@ -5,7 +5,7 @@ Supports only pkcs12 keystores.
 Note: RSA isn't recommended for block encryption of file.
 
 # Build
-It is highly recommended to build the project with JDK 17, because it supports PKCS12 keystores (for example JDK11 doesn't support it and jarsigner will give an error). JDK 17 should be included in PATH environment variable because `build.sh` uses `java` and `jarsigner`. 
+It is highly recommended to build the project with JDK 17, because it supports PKCS12 keystores (for example JDK11 doesn't support it and jarsigner will give an error). JDK 17 should be included in PATH environment variable because `build.sh` uses `java` and `jarsigner`. You will also need Maven.
 
 To build the application run `build.sh`.
 
