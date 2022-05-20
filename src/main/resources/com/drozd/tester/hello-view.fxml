@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="447.0" prefWidth="650.0" style="-fx-background-color: #262626;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.drozd.tester.Controller">
+   <children>
+      <VBox alignment="BOTTOM_CENTER" fillWidth="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="438.0" prefWidth="650.0" spacing="10.0">
+         <children>
+            <AnchorPane prefHeight="127.0" prefWidth="626.0" style="-fx-background-color: #444444;">
+               <children>
+                  <Label fx:id="q1QuestionTag" layoutX="15.0" layoutY="6.0" style="-fx-text-fill: white;" text="%question1Tag" />
+                  <HBox layoutX="14.0" layoutY="26.0" spacing="5.0">
+                     <children>
+                        <Label fx:id="q1QuestionLabel" style="-fx-text-fill: white;" text="%q1Question" />
+                        <ComboBox fx:id="q1CountryComboBox" prefHeight="8.0" prefWidth="150.0" stylesheets="@../../../stylesheets.css" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="q1QuestionCheckLabel" layoutX="15.0" layoutY="95.0" prefHeight="27.0" prefWidth="598.0" style="-fx-text-fill: white;" wrapText="true" />
+                  <TextField fx:id="q1AnswerTextField" layoutX="14.0" layoutY="64.0" onKeyPressed="#onQ1AnswerKeyClicked" prefHeight="26.0" prefWidth="97.0" promptText="%answerPrompt" stylesheets="@../../../stylesheets.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="134.0" prefWidth="626.0" style="-fx-background-color: #444444;">
+               <children>
+                  <Label fx:id="q2QuestionTag" layoutX="14.0" layoutY="6.0" style="-fx-text-fill: white;" text="%question2Tag" />
+                  <HBox layoutX="14.0" layoutY="35.0" spacing="5.0">
+                     <children>
+                        <Label style="-fx-text-fill: white;" text="%q2Question" />
+                        <ComboBox fx:id="q2CountryComboBox" prefHeight="8.0" prefWidth="150.0" stylesheets="@../../../stylesheets.css" />
+                     </children>
+                  </HBox>
+                  <Label fx:id="q2QuestionCheckLabel" layoutX="15.0" layoutY="94.0" prefHeight="34.0" prefWidth="598.0" style="-fx-text-fill: white;" wrapText="true" />
+                  <TextField fx:id="q2AnswerTextField" layoutX="14.0" layoutY="60.0" onKeyPressed="#onQ2AnswerKeyClicked" prefHeight="26.0" prefWidth="97.0" promptText="%answerPrompt" stylesheets="@../../../stylesheets.css" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="117.0" prefWidth="626.0" style="-fx-background-color: #444444;">
+               <children>
+                  <Label fx:id="q3QuestionTag" layoutX="14.0" layoutY="6.0" style="-fx-text-fill: white;" text="%question3Tag" />
+                  <Label layoutX="14.0" layoutY="30.0" prefHeight="17.0" prefWidth="237.0" style="-fx-text-fill: white;" text="%q3Question" />
+                  <TextField fx:id="q3AnswerTextField" layoutX="14.0" layoutY="48.0" onKeyPressed="#onQ3AnswerKeyClicked" prefHeight="26.0" prefWidth="97.0" promptText="%answerPrompt" stylesheets="@../../../stylesheets.css" />
+                  <Label fx:id="q3QuestionCheckLabel" layoutX="14.0" layoutY="84.0" prefHeight="26.0" prefWidth="598.0" style="-fx-text-fill: white;" wrapText="true" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <HBox layoutY="5.0" prefHeight="27.0" prefWidth="641.0" spacing="5.0">
+         <children>
+            <Region prefHeight="27.0" prefWidth="538.0" />
+            <Button fx:id="plButton" mnemonicParsing="false" onAction="#onSetLanguagePL" style="-fx-background-color: #444444; -fx-text-fill: white;" text="PL" />
+            <Button fx:id="enButton" mnemonicParsing="false" onAction="#onSetLanguageEN" style="-fx-background-color: #444444; -fx-text-fill: white;" text="EN (US)" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
