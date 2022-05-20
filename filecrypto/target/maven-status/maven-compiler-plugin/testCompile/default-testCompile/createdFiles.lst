@@ -1,0 +1,4 @@
+com\drozd\filecrypto\StreamComparator.class
+com\drozd\filecrypto\AESCryptoTest.class
+com\drozd\filecrypto\RSACryptoTest.class
+com\drozd\filecrypto\TestSuite.class

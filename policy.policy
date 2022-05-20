@@ -1,0 +1,26 @@
+keystore "file:${user.dir}/trusted.pfx", "PKCS12", "SUN";
+keystorePasswordURL "file:${user.dir}/trusted.pass";
+
+grant {
+	permission java.net.SocketPermission "*", "connect,listen,accept,resolve";
+	permission java.io.FilePermission "<<ALL FILES>>","read, write, delete, execute";
+	permission java.util.PropertyPermission "*", "read, write";
+	permission java.lang.RuntimePermission "*", "all";
+	permission java.lang.reflect.ReflectPermission "*", "suppressAccessChecks";
+	permission java.security.SecurityPermission "setProperty.crypto.policy";
+	permission javafx.util.FXPermission "accessWindowList";
+};
+
+grant codeBase "file:${user.dir}/lib/*"{
+	permission java.security.AllPermission;
+};
+
+grant signedBy "drozd" codeBase "file:${user.dir}/lib/signed/filecrypto-1.0.jar" {
+	permission java.security.AllPermission;
+	permission java.security.SecurityPermission "setProperty.crypto.policy";
+	permission java.io.FilePermission "<<ALL FILES>>", "read,write,delete";
+};
+
+grant signedBy "drozd" codeBase "file:${user.dir}/filecryptoapp-1.0.jar" {
+	permission java.security.AllPermission;
+};

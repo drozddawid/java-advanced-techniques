@@ -1,0 +1,47 @@
+#pane{
+    -fx-background-image: url("matrix.jpg");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1366 768;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+}
+
+.button {
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+.label {
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+.text-area {
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-prompt-text-fill: #b0b0b0;
+}
+.combo-box {
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-width: 2;
+    -fx-prompt-text-fill: white;
+}
+
+.combo-box .list-cell
+{
+    -fx-background: #212121;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.combo-box-popup .list-view
+{
+    -fx-background-color: #212121;
+    -fx-text-fill: white;
+}

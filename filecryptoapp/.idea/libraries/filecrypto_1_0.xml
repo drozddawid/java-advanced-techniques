@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="filecrypto-1.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/filecrypto-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

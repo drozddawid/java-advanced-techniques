@@ -1,0 +1,10 @@
+keystore "file:C:/Users/drozd/Desktop/java projects/filecryptoapp/trusted.jks", "PKCS12", "SUN";
+keystorePasswordURL "file:C:/Users/drozd/Desktop/java projects/filecryptoapp/trusted.pass";
+
+grant codeBase "file:C:/-"{
+  permission java.security.AllPermission;
+};
+
+grant signedBy "drozd" codeBase "file:C:\Users\drozd\Desktop\java projects\filecryptoapp\sfilecrypto-1.0.jar" {
+
+};

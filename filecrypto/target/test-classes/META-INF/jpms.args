@@ -1,0 +1,4 @@
+--patch-module
+com.drozd.filecrypto=_
+--add-reads
+com.drozd.filecrypto=ALL-UNNAMED
