@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Main-Class: 
+Class-Path: jackson-core-2.13.2.jar jackson-annotations-2.13.2.jar jacks
+ on-databind-2.13.2.jar
+

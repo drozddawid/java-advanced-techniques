@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.drozd.app.Controller">
+    <left>
+        <VBox minWidth="200.0" prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="TOP_LEFT">
+            <children>
+                <Button alignment="TOP_CENTER" minWidth="100.0" mnemonicParsing="false" onAction="#onChooseFolderButtonClick" prefHeight="26.0" prefWidth="170.0" text="Choose folder" textAlignment="CENTER">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Button>
+                <Button fx:id="createSnapshotButton" alignment="TOP_CENTER" disable="true" layoutX="38.0" layoutY="18.0" minWidth="100.0" mnemonicParsing="false" onAction="#onCreateSnapshotButtonClicked" prefHeight="26.0" prefWidth="170.0" text="Create snapshot" />
+                <Button fx:id="checkChangesButton" alignment="TOP_CENTER" disable="true" layoutX="38.0" layoutY="43.0" minWidth="100.0" mnemonicParsing="false" onAction="#onCheckChangesButtonClicked" prefHeight="26.0" prefWidth="170.0" text="Check changes" />
+                <Region prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                <Label alignment="TOP_LEFT" prefHeight="3.0" prefWidth="184.0" text="Green - no changes." textAlignment="CENTER" />
+                <Label layoutX="18.0" layoutY="109.0" prefHeight="3.0" prefWidth="184.0" text="Red - changes detected." />
+                <Label layoutX="18.0" layoutY="132.0" prefHeight="3.0" prefWidth="184.0" text="Yellow/White - no snapshot." />
+
+            </children>
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding>
+            <BorderPane.margin>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </BorderPane.margin>
+        </VBox>
+    </left>
+    <center>
+        <TreeView fx:id="fileView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+        </TreeView>
+    </center>
+    <bottom>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </BorderPane.margin>
+            <children>
+                <TextArea fx:id="consoleTextArea" editable="false" prefHeight="150.0" prefWidth="595.0" styleClass="text-area" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>
