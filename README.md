@@ -2,7 +2,7 @@
 My solutions for the tasks performed during the course "Java programming - advanced techniques" conducted at the Wrocław University of Science and Technology.
 
 # Repository structure
-So as to make the repository structure more transparent, I created separate branch for every task solution. Every task is described in it's README.md.
+So as to make the repository structure more transparent, I created separate branch for every task solution. Every task is described more precisely in its README.md (on its branch).
 
 # Summary
 Below are short descriptions of every task in this repository.
